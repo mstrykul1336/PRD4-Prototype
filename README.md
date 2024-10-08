@@ -3,17 +3,17 @@ PRD4 Prototype of Shadows Over Suburbia
 Full Project Here: https://github.com/mstrykul1336/Shadows-Over-Suburbia-Prototype-
 Play: https://mstrykul1336.github.io/PRD4-Prototype/
 Tasks:
-Fix attack system and get it working.
-Fix health UI to display properly 
-Make it so players leave the lobby (because winning and voting both rely on the playerList from photon and I don't want to go in and try to change that. It's easier to just force the player out of the game so that it doesn't count them. Eventually they'll get to drop a death note though so at least they'll contribute something if they die.)
-Implement chat box with being able to disable it for spectating players (if that's the way I go) and disable the chat box at night cycle.
-Make sure voting runs smoothly (I think currently it needs time for votes to be counted before immediately voting out a player and needs to check if someone has equal votes). I think I also want to change it so voting doesn't happen on the first day cycle. Just start the game and give the players 30ish seconds to read their role and get used to their abilities. Then go to night cycle, then when day happens again, voting will start. 
-Add in basics for character names, assigning characters at random and debugging in what abilities you get as that character.
-Add in debug for what abilities you get as each role. 
+- Fix attack system and get it working.
+- Fix health UI to display properly 
+- Make it so players leave the lobby (because winning and voting both rely on the playerList from photon and I don't want to go in and try to change that. It's easier to just force the player out of the game so that it doesn't count them. Eventually they'll get to drop a death note though so at least they'll contribute something if they die.)
+- Implement chat box with being able to disable it for spectating players (if that's the way I go) and disable the chat box at night cycle.
+- Make sure voting runs smoothly (I think currently it needs time for votes to be counted before immediately voting out a player and needs to check if someone has equal votes). I think I also want to change it so voting doesn't happen on the first day cycle. Just start the game and give the players 30ish seconds to read their role and get used to their abilities. Then go to night cycle, then when day happens again, voting will start. 
+- Add in basics for character names, assigning characters at random and debugging in what abilities you get as that character.
+- Add in debug for what abilities you get as each role. 
 Backlog:
-Add shop and coin system. (This will require I add items too)
-Add options to menu screen.
-Add in neutral character side for OldMan character. 
+- Add shop and coin system. (This will require I add items too)
+- Add options to menu screen.
+- Add in neutral character side for OldMan character. 
 
 What was done: 
 - Fixed health UI, now players have separate health UI and can't see other health. (Still buggy)
@@ -35,4 +35,5 @@ What was done:
 - I want to still add characters but I feel that's more of a formal element. Not required for the game loop. I will be adding these in vertical slice. 
 
 - Abilities exist now! Just...in the debug, but they get assigned! Not all abilities are thought of yet tho so they're not all there.
-- It tries to force the player out of the lobby, but sometimes it works and other times it doesn't. I think it has to do with who is the master client, even though I have it set to change master client to someone else if the master client was killed. 
+- It tries to force the player out of the lobby, but sometimes it works and other times it doesn't. I think it has to do with who is the master client, even though I have it set to change master client to someone else if the master client was killed.
+- I tried to make a chat but had to delete it because it was buggy and felt really weird to use in first POV. I think I'll stick with trying to add voice chat instead. 
